@@ -14,7 +14,7 @@ namespace OOP3
 
         public override void MakeASound()
         {
-            Console.WriteLine("Woof woof!");
+            Console.WriteLine("Wooof woof!");
         }
     }
 }
