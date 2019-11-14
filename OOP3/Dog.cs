@@ -27,7 +27,7 @@ namespace OOP3
 
         public override string ToString()
         {
-            return string.Format("Name: {0}\nAge: {1}\nGender: {2}\n\n", this.Name, this.Age, this.Gender);
+            return string.Format("Name: {0}\nAge: {1}\nGender: {2}\n", this.Name, this.Age, this.Gender);
         }
     }
 }

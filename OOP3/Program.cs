@@ -11,7 +11,7 @@ namespace OOP3
         static void Main(string[] args)
         {
             //CATS
-            List<Cat> cats = new List<Cat>()
+            Cat[] cats =
             {
                 new Cat(10, "Linus", Gender.male),
                 new Cat(15, "Pelle")
@@ -19,7 +19,7 @@ namespace OOP3
 
 
             //DOGS
-            List<Dog> dogs = new List<Dog>()
+            Dog[] dogs =
             {
                 new Dog(5, "Danne", Gender.male),
                 new Dog(1, "Adam")
@@ -27,14 +27,14 @@ namespace OOP3
 
 
             //FROGS
-            List<Frog> frogs = new List<Frog>()
+            Frog[] frogs =
             {
                 new Frog(2, "Jenne", Gender.female)
             };
 
 
             //KITTENS
-            List<Kitten> kittens = new List<Kitten>()
+            Kitten[] kittens =
             {
                 new Kitten(3, "Bitte"),
                 new Kitten(1, "Helle")
@@ -48,28 +48,38 @@ namespace OOP3
                 new Tomcat(20, "Plura")
             };
 
+
+            Console.WriteLine("Animals");
+            Console.WriteLine("_______________________________________\nCATS\n");
+            PrintArray(cats);
+            cats[0].MakeASound();
+
+            Console.WriteLine("_______________________________________\nDOGS\n");
+            PrintArray(dogs);
+            dogs[0].MakeASound();
+
+            Console.WriteLine("_______________________________________\nFROGS\n");
+            PrintArray(frogs);
+            frogs[0].MakeASound();
+
+            Console.WriteLine("_______________________________________\nKITTENS\n");
+            PrintArray(kittens);
+            kittens[0].MakeASound();
+
+            Console.WriteLine("_______________________________________\nTOMCATS\n");
+            PrintArray(tomcats);
             tomcats[0].MakeASound();
 
-            Console.WriteLine("*** CATS ***");
-            cats.ForEach(Console.WriteLine);
+            Console.ReadKey();
+        }
 
-            Console.WriteLine("*** DOGS ***");
-            dogs.ForEach(Console.WriteLine);
-
-            Console.WriteLine("*** FROGS ***");
-            frogs.ForEach(Console.WriteLine);
-
-            Console.WriteLine("*** KITTENS ***");
-            kittens.ForEach(Console.WriteLine);
-
-            Console.WriteLine("*** TOMCATS ***");
-            foreach(object item in tomcats)
+        static void PrintArray(Object[] arr)
+        {
+            foreach(object item in arr)
             {
                 Console.WriteLine(item);
-                tomcats[0].MakeASound();
             }
 
-            Console.ReadKey();
         }
     }
 }
