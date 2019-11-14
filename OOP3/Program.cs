@@ -10,6 +10,10 @@ namespace OOP3
     {
         static void Main(string[] args)
         {
+            List<Cat> cats = new List<Cat>()
+            {
+                new Cat(10, "Linus", Gender.male)
+            };
         }
     }
 }

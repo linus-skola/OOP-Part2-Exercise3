@@ -7,9 +7,9 @@ namespace OOP3
 {
     public class Cat : Animals
     {
-        public void cat()
+        public Cat(int age, string name, Gender gender) : base(age, name, gender)
         {
-            throw new System.NotImplementedException();
+
         }
     }
 }

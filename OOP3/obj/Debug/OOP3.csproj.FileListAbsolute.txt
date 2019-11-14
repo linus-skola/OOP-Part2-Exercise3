@@ -1,0 +1,6 @@
+C:\Projects\OOP3\OOP3\bin\Debug\OOP3.exe.config
+C:\Projects\OOP3\OOP3\bin\Debug\OOP3.exe
+C:\Projects\OOP3\OOP3\bin\Debug\OOP3.pdb
+C:\Projects\OOP3\OOP3\obj\Debug\OOP3.csprojAssemblyReference.cache
+C:\Projects\OOP3\OOP3\obj\Debug\OOP3.exe
+C:\Projects\OOP3\OOP3\obj\Debug\OOP3.pdb

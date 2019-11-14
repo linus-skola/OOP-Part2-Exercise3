@@ -7,8 +7,9 @@ namespace OOP3
 {
     public class Animals
     {
-        int age = 0;
-        string name;
+        private int age = 0;
+        private string name;
+        private Gender gender;
 
         public Animals(int age, string name, Gender gender)
         {
@@ -32,15 +33,13 @@ namespace OOP3
             }
         }
 
-        public int Gender
+        public Gender Gender
         {
-            get => default;
-            set
-            {
-            }
+            get { return this.gender; }
+            set { this.gender = value; }
         }
 
-        public void MakeASound()
+        public virtual void MakeASound()
         {
             
         }
