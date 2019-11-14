@@ -8,6 +8,7 @@ namespace OOP3
     public enum Gender
     {
         male,
-        female
+        female,
+        undefined
     }
 }
